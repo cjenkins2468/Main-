@@ -20,8 +20,8 @@ def leftCirc(string,num_of_char):
     while num_of_char != 0:
         if pointer==8:
             pointer=1                                                    #resets charter if pointer goes over 7
-        new_string = new_string[len(string)-1]+new_string
-        new_string= new_string[0:len(new_string)-1]
+        new_string = new_string[len(string)-1]+new_string                #takes last charecter and moves it to the frount of the string
+        new_string= new_string[0:len(new_string)-1]                      #removes the last charecter in the string
         pointer = pointer + 1
         num_of_char = num_of_char - 1
     return new_string
