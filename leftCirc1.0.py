@@ -21,7 +21,7 @@ def leftCirc(string,num_of_char):
     while num_of_char != 0:
         if pointer==8:
             pointer=1
-        new_string = new_string+new_string[0] #add one charcher to fliped_char
+        new_string = new_string+new_string[0] 
         new_string= new_string[1:len(new_string)]
         pointer = pointer + 1
         num_of_char = num_of_char - 1
